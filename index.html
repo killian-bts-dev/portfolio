@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Killian - Portfolio</title>
+    <link rel="icon" href="src/Test K Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <script src="js/DarkMode.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-button");
+        if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+        }
+        });
+        
+    </script>
+
+    <nav class="navbar">
+        <nav class="sidebar">
+        <div class ="navbar-content">
+            <div class="title"><img src="src/Test K Logo2.png" height="48px";></div>
+            <div class="nav-button">
+                <a class="nav-active" href="#">Accueil</a>
+                <a class="nav-link" href="pages/profil.html">Profil</a>
+                <a class="nav-link" href="pages/projets/projet.html">Projets</a>
+                <a class="nav-link" href="pages/stage.html">Stage</a>
+                <a class="nav-link" href="pages/certification.html">Certifications</a>
+                <a class="nav-link" href="pages/patrimoine.html">Gestion Patrimoine</a>
+                <a class="nav-link" href="pages/documentation.html">Documentation</a>
+                <a class="nav-link" href="pages/veille.html">Veille</a>
+                <div class="copyright-mobile">©2025 Killian - Tous droits réservés </div>
+                
+                <!-- <button id="toggleDarkMode">🌙 Mode Sombre</button> -->
+            </div>
+            <button class="menu-toggle">☰</button>
+        </div>
+    <div class="horizontal-bar"></div>
+        </nav>
+    </nav>
+
+    <div class="container"> 
+        <div class="container-content">
+        <div class="titre"> Bienvenue sur le Portfolio de Killian
+        </div>
+        <div class="description"> -> Je suis actuellement en BTS SIO - OPTION SLAM pour une formation en Bac +2. 
+            <br> -> Je suis passionné et intéressé par le domaine de l'informatique et précisément dans le développement.
+        </div>
+        <a href="pages/projets/projet.html">
+            <button type="button" class="btn-primary">Regarder les projets </button>
+        </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="texte">Vous pouvez me contacter :</div>
+            <div class="social-icon">
+                <a href="mailto:turpin.killian.pro@gmail.com"> Mail </a>
+                <a href="https://linkedin.com"> LinkedIn </a>
+                <a href="https://discord.com"> Discord </a>
+            </div>
+        </div>
+    </footer>
+

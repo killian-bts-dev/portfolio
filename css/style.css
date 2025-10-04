@@ -1,0 +1,217 @@
+:root {
+    --bg-light-blue:  #F3FAFF;
+    --bg-light-white: white;
+    --text-light: #000000;
+
+    --bg-dark: #181818;
+    --text-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    /* background-color: #F3FAFF; */
+    Background-color: var(--bg-light-blue);
+    color: var(--text-light);
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-content {
+    padding: 40px 80px;
+    background-color: var(--bg-light-white);
+    display: flex;
+    justify-content: space-between; /* Sépare le logo et les boutons */
+    align-items: center; /* Centre verticalement */
+
+}
+
+
+.nav-button {
+    display: flex;
+    gap: 48px;
+    font-size : 20px;
+    align-items: center;
+}
+
+.nav-button a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color:black ;
+}
+
+.nav-link:hover {
+    color: #599cff;
+}
+
+.nav-active {
+    color: #006ECF ;
+}
+
+.horizontal-bar {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #006ECF, #00fff7);
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 85%;
+    margin: 100px auto;
+}
+
+.titre {
+    font-size: 64px;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+.description {
+    font-size: 20px;
+    color : rgb(100, 100, 100);
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.btn-primary {
+    background-color : #010D1F;
+    color : white ;
+    font-size: 24px;
+    padding-right : 32px;
+    padding-left: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+.btn-secondary {
+    background-color : #010D1F;
+    color : white ;
+    font-size: 18px;
+    padding-right : 24px;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+.btn-green {
+    background-color : #010D1F;
+    color : white ;
+    font-size: 18px;
+    padding-right : 24px;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+.btn-red {
+    background-color : #010D1F;
+    color : white ;
+    font-size: 18px;
+    padding-right : 24px;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: #0066FF;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    cursor: pointer;
+    background-color: #0066FF;
+    transition: 0.3s ease;
+}
+
+.btn-green:hover {
+    cursor: pointer;
+    background-color: #03b849;
+    transition: 0.3s ease;
+}
+
+.btn-red:hover {
+    cursor: pointer;
+    background-color: #ff0055;
+    transition: 0.3s ease;
+}
+
+.text-section {
+    flex: 1; /* Occupe l’espace disponible */
+}
+
+.image-section {
+    flex: 1; /* Ajuste la taille de l’image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%; /* L’image s’adapte à la section */
+    max-width: 400px; /* Taille max de l’image */
+    border-radius: 10px; /* Arrondi les coins */
+}
+
+.container-about {
+    display: flex;
+    justify-content: space-between; /* Espace équilibré entre les sections */
+    align-items: center; /* Aligne les éléments verticalement */
+    gap: 20px; /* Espacement entre les sections */
+    padding: 20px;
+    width: 85%;
+    margin: 100px auto;
+}
+
+
+footer {
+    padding: 25px 0;
+    bottom: 0;
+    background-color:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centre verticalement */
+    position: fixed;
+    width: 100%;
+}
+
+
+.footer-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-mobile {
+    font-size: 10px;
+    justify-content: center;
+    display: none;
+}

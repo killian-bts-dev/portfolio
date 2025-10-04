@@ -1,0 +1,201 @@
+/* Bouton hamburger caché par défaut */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  font-size: 28px;
+  background: white;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+  /* Styles pour les téléphones */
+  .titre {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  footer {
+    display: none;
+  }
+
+    .btn-primary {
+    font-size: 16px;
+    padding-right : 24px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+    .btn-secondary {
+    font-size: 14px;
+    padding-right : 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+    .btn-green {
+    font-size: 14px;
+    padding-right : 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+    .btn-red {
+    font-size: 14px;
+    padding-right : 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-button {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px; /* position en dehors de l'écran */
+    width: 250px;
+    height: 100%; /* hauteur de l'écran */
+    background-color: var(--bg-light-white);
+    padding-top: 100px;
+    gap: 24px;
+    transition: right 0.3s ease; /* transition à droite */
+    z-index: 1000;
+  }
+
+  .nav-button.open {
+    right: 0;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Centre les liens dans le menu */
+  .nav-button a {
+    font-size: 18px;
+  }
+
+  /* Cache l’ancienne structure horizontale sur mobile */
+  .navbar-content {
+    padding: 40px 80px;
+    background-color: var(--bg-light-white);
+    display: flex;
+    justify-content: space-between; /* Sépare le logo et les boutons */
+    align-items: center; /* Centre verticalement */
+  }
+
+/* Page à profil.php */
+  .container-about {
+    flex-direction: column;
+    margin: 75px auto;
+  }
+
+/* Page à projet.php */
+  .container-projet {
+    flex-direction: column;
+    margin: 75px auto;
+  }
+  .container-projet-description {
+    margin: 50px auto;
+}
+
+/* Page stage.php */
+.container-stage {
+    width: auto;
+}
+
+.copyright-mobile {
+  font-size: 10px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles pour les tablettes */
+  .menu-toggle {
+    display: block;
+  }
+
+    .titre {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+    .btn-primary {
+    font-size: 18px;
+    padding-right : 24px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border-color: transparent;
+
+}
+
+  .nav-button {
+    gap: 20px;
+}
+  .nav-button {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding-top: 100px;
+    gap: 24px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-button.open {
+    right: 0;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+  }
+
+  .container-about {
+    margin: 50px auto;
+  }
+
+  .copyright-mobile {
+  font-size: 10px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* Styles pour les ordinateurs */
+  .menu-toggle {
+    display: none;
+}
+  .copyright-mobile {
+  display : none;
+  }
+}

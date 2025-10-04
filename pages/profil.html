@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Killian - Portfolio</title>
+    <link rel="icon" href="../src/Test K Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-button");
+        if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+        }
+    });
+        
+    </script>
+    <nav class="navbar">
+        <nav class="sidebar">
+        <div class="navbar-content">
+            <div class="title"><img src="../src/Test K Logo2.png" height="48px";></div>
+            <div class="nav-button">
+                <a class="nav-link" href="../index.html">Accueil</a>
+                <a class="nav-active" href="#">Profil</a>
+                <a class="nav-link" href="projets/projet.html">Projets</a>
+                <a class="nav-link" href="stage.html">Stage</a>
+                <a class="nav-link" href="certification.html">Certifications</a>
+                <a class="nav-link" href="patrimoine.html">Gestion Patrimoine</a>
+                <a class="nav-link" href="documentation.html">Documentation</a>
+                <a class="nav-link" href="veille.html">Veille</a>
+            </div>
+            <button class="menu-toggle">☰</button>
+        </div>
+    <div class="horizontal-bar"></div>
+        </nav>
+    </nav>
+
+<!-- Content -->
+    <div class="container-about">
+    <div class="text-section">
+        <h1>A propos de moi</h1>
+        <p>Je suis étudiant au lycée polyvalent Nelson Mandela dans le cadre de ma formation au <b> BTS Services Informatiques aux Organisations (SIO) </b> avec la spécialité <b> SLAM (Solution Logicielle Application Métiers) </b>. 
+            <br></br> Je suis un passionné dans ce domaine depuis la seconde où j'ai commencé à m'avancer avec la création d'un site internet. 
+            Aujourd'hui, je continue à suivre ce chemin en apprenant les divers aspects que proposent le domaine de l'informatique notamment la création d'application mobile, la cybersécurité, les systèmes d'exploitations (Linux, Windows). 
+        </p>
+        <a href="..\src\CV - TURPIN KILLIAN.pdf">
+            <button type="button" class="btn-secondary">Mon CV</button>
+        </a>
+        <a href="bts-sio.html">
+            <button type="button" class="btn-secondary">BTS SIO</button>
+        </a>
+
+        <a href="parcours.html"> 
+            <button type="button" class="btn-secondary"> Parcours </button>
+        </a>
+
+        <br></br> 
+    </div>
+    <div class="image-section">
+        <img src="../src/Test K Logo2.png" alt="Image d'une poire">
+    </div>
+
+    
+    
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="texte">Vous pouvez me contacter sur :</div>
+            <div class="social-icon">
+                <a href="https://facebook.com"> Facebook </a>
+                <a href="https://linkedin.com"> LinkedIn </a>
+                <a href="https://discord.com"> Discord </a>
+            </div>
+        </div>
+    </footer>
