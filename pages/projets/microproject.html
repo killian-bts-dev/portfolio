@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Killian - Portfolio</title>
+    <link rel="icon" href="../../src/Test K Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/projet.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-button");
+        if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+        }
+        });
+        
+    </script>
+
+    <nav class="navbar">
+        <nav class="sidebar">
+        <div class ="navbar-content">
+            <div class="title"><img src="../../src/Test K Logo2.png" height="48px";></div>
+            <div class="nav-button">
+                <a class="nav-link" href="../../index.html">Accueil</a>
+                <a class="nav-link" href="../profil.html">Profil</a>
+                <a class="nav-active" href="projet.html">Projets</a>
+                <a class="nav-link" href="../stage.html">Stage</a>
+                <a class="nav-link" href="../certification.html">Certifications</a>
+                <a class="nav-link" href="../patrimoine.html">Gestion Patrimoine</a>
+                <a class="nav-link" href="../documentation.html">Documentation</a>
+                <a class="nav-link" href="../veille.html">Veille</a>
+            </div>
+        </div>
+        <button class="menu-toggle">☰</button>
+    <div class="horizontal-bar"></div>
+        </nav>
+    </nav>
+
+<!-- Content -->
+
+    <div class="banner-project">
+        <div class="filtre"></div>
+        <div class="titre-projet"> MicroProject </div> 
+    </div>
+
+    <div class="container-projet-entete">
+        <div class="text-section">
+            <h1>Présentation & Contexte</h1>
+            <p> MicroProject est une petite ESN (Entreprise de Service du Numérique) fondée en 2024 par des anciens élèves du Lycée Nelson Mandela. <br></br>
+                L'entreprise d'ESN souhaitait une interface web dynamique afin d'entrer des informations d'adresse IP, protocole et le nombre de paquets dans un tableau de trafic.<br>
+                L'entreprise souhaitait aussi avoir un site dynamique.
+            </p>
+            <br>
+            <h1>Solutions </h1>
+            <p>
+                Pour la création de ce projet, la solution la plus adaptée était de développer les deux projets, l'interface ainsi que le site en HTML, CSS et PHP. <br>
+                Le temps a été une contrainte pour la création du projet. Le design des sites sera simplifié.
+            </p>
+        </div>
+        <!-- <div class="image-section">
+            <img src="../../src/poire.png" alt="Image">
+        </div> --> 
+    </div>
+
+    
+
+    <div class="container-projet-description">
+            <div class="text-section">
+                <h1> Création de la page tableau trafic </h1>
+                <p> L'objectif de cette page est d'afficher et de visualiser toutes les adresses, protocoles et nombre de paquets venant d'un fichier .txt donné dans un tableau avec la possibilité de revenir vers une page d'accueil, 
+                    réer une nouvelle entrée, filtrer la vue de ce tableau par adresses ou par protocole. 
+
+                    <br></br>
+
+                    Pour cela, il a fallu créer une partie HTML pour l'affichage des différents boutons et du style du tableau. 
+                </p>
+            </div> 
+
+            <br></br>
+
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-1.png'); height: 400px;"></div>
+
+            <div class="text-section">
+                <p> Une partie en PHP pour afficher les données du fichier texte dynamiquement.</p>
+            </div> 
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-2.png'); height: 400px;"></div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-3.png'); height: 400px;"></div>
+
+            <br></br>
+
+            <div class="text-section">
+                <h1> Filtrer la vue du tableau par IP ou par Protocole </h1>
+                <p> L'utilisateur souhaite pouvoir voir le nombre de paquets par IP ou par Protocole. </p>
+            </div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-4.png'); height: 400px;"></div>
+
+            <div class="text-section">
+                <p> La base de la partie HTML reste le même, uniquement le PHP change :  </p>
+            </div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-5.png'); height: 400px;"></div>
+
+            <div class="text-section">
+                <p> Filtre par Protocole : </p>
+            </div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-6.png'); height: 400px;"></div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-7.png'); height: 400px;"></div>
+
+            <div class="text-section">
+                <h1> Formulaire pour ajouter une entrée  </h1>
+                <p> L'objectif de ce formulaire est de pouvoir ajouter dans le fichier texte une nouvelle entrée sans passer par une modification manuelle de ce dernier. </p>
+            </div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-8.png'); height: 400px;"></div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-9.png'); height: 400px;"></div>
+
+            <div class="text-section">
+                <h1> Site internet</h1>
+                <p> Le site internet est très simplifié par une contrainte du temps imposé. </p>
+            </div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-Site1.png'); height: 400px;"></div>
+            <div class="image-section-description" style="background-image: url('../../src/MicroProject-Site2.png'); height: 400px;"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="texte">Non terminée | ©2025 Killian - Tous droits réservés</div>
+        </div>
+    </footer>
