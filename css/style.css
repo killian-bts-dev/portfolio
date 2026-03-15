@@ -1,5 +1,5 @@
 :root {
-    --bg-light-blue:  #F3FAFF;
+    --bg-light-blue:  #f5f5f5;
     --bg-light-white: white;
     --text-light: #000000;
 
@@ -24,6 +24,12 @@ body.dark-mode {
 
 a {
     text-decoration: none;
+}
+
+a.desc-veille {
+    color:white; 
+    font-weight: bold; 
+    text-decoration: underline;
 }
 
 .navbar-content {
@@ -59,11 +65,36 @@ a {
     color: #006ECF ;
 }
 
-.horizontal-bar {
+/* .horizontal-bar {
     width: 100%;
     height: 6px;
     background: linear-gradient(to right, #006ECF, #00fff7);
+} */
+
+.horizontal-bar {
+    width: 100%;
+    height: 6px;
+    background-size: 200% 100%; 
+    background-image: repeating-linear-gradient(
+    90deg,
+    #006ECF 0%,
+    #00fff7 50%,
+    #006ECF 100%
+  );
+  animation: gradient 8s linear infinite;
 }
+
+@keyframes gradient {
+  from { background-position: 0% 50%; } 
+  to { background-position: 200% 50%; } 
+}
+
+.separateur {
+    width: 20%;
+    height: 6px;
+    background: linear-gradient(to right, #006ECF, #00fff7);
+}
+
 
 .container {
     display: flex;
@@ -72,6 +103,10 @@ a {
     flex-direction: column;
     width: 85%;
     margin: 100px auto;
+}
+
+h1 {
+    color: #0066FF;
 }
 
 .titre {
@@ -83,10 +118,13 @@ a {
 
 .description {
     font-size: 20px;
-    color : rgb(100, 100, 100);
+    color : rgb(70, 70, 70);
     font-weight: 400;
     padding-bottom: 20px;
 }
+
+
+/* -- BOUTONS -- */
 
 .btn-primary {
     background-color : #010D1F;
@@ -102,70 +140,50 @@ a {
 }
 
 .btn-secondary {
-    background-color : #010D1F;
-    color : white ;
-    font-size: 18px;
-    padding-right : 24px;
-    padding-left: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    border-color: transparent;
+  background-color: #010D1F;
+  color: white;
+  font-size: 18px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 
+  background-size: 200% 100%;
 }
 
-.btn-green {
-    background-color : #010D1F;
-    color : white ;
-    font-size: 18px;
-    padding-right : 24px;
-    padding-left: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    border-color: transparent;
-
-}
-
-.btn-red {
-    background-color : #010D1F;
-    color : white ;
-    font-size: 18px;
-    padding-right : 24px;
-    padding-left: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    border-color: transparent;
-
-}
 
 .btn-primary:hover {
     cursor: pointer;
     background-color: #0066FF;
-    transition: 0.3s ease;
+    
 }
 
 .btn-secondary:hover {
-    cursor: pointer;
-    background-color: #0066FF;
-    transition: 0.3s ease;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #006ECF 0%,
+    #00fff7 50%,
+    #006ECF 100%
+  );
+  transition: opacity 4s ease;
+  animation: gradientMove 2s linear infinite;
 }
 
-.btn-green:hover {
-    cursor: pointer;
-    background-color: #03b849;
-    transition: 0.3s ease;
+@keyframes gradientMove {
+  from { background-position: 0% 50%; } 
+  to { background-position: 200% 50%; } 
 }
 
-.btn-red:hover {
-    cursor: pointer;
-    background-color: #ff0055;
-    transition: 0.3s ease;
-}
+/* -- FIN BOUTONS -- */
+
 
 .text-section {
     flex: 1; /* Occupe l’espace disponible */
+}
+
+.text-section-profil {
+    padding: 20px 0 20px 0;
+    max-width: 700px;
 }
 
 .image-section {
@@ -191,11 +209,58 @@ a {
     margin: 100px auto;
 }
 
+/* -- VEILLE -- */
+
+.titre-veille, .desc-veille {
+    color: white;
+    margin: 10px;
+}
+
+.titre-veille {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    column-gap: 5px;
+}
+
+.info-veille {
+    display: flex;
+    justify-content: space-between; /* Espace équilibré entre les sections */
+    padding: 30px;
+    width: 50%;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #0066FF;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease,  padding 0.4s ease, opacity 0.3s ease;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content.open {
+  max-height: 300px;
+  padding: 10px 0;
+  opacity: 1;
+}
+
 
 footer {
-    padding: 25px 0;
+    left:0 ;
+    padding: 20px 0;
     bottom: 0;
-    background-color:  white;
+    background-color:  rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center; /* Centre verticalement */

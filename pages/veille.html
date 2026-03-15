@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=info" />
 
 </head>
 <body>
@@ -26,7 +27,7 @@
         });
         }
         });
-        
+
     </script>
 
     <nav class="navbar">
@@ -35,12 +36,11 @@
             <div class="title"><img src="../src/Test K Logo2.png" height="48px";></div>
             <div class="nav-button">
                 <a class="nav-link" href="../index.html">Accueil</a>
-                <a class="nav-link" href="profil.html">Profil</a>
+                <!-- <a class="nav-link" href="profil.html">Profil</a> -->
                 <a class="nav-link" href="projets/projet.html">Projets</a>
-                <a class="nav-link" href="stage.html">Stage</a>
+                <a class="nav-link" href="stage.html">Stages</a>
                 <a class="nav-link" href="certification.html">Certifications</a>
-                <a class="nav-link" href="patrimoine.html">Gestion Patrimoine</a>
-                <a class="nav-link" href="documentation.html">Documentation</a>
+                <a class="nav-link" href="documentation.html">Documentations</a>
                 <a class="nav-active" href="#">Veille</a>
                 <div class="copyright-mobile">©2025 Killian - Tous droits réservés </div>
                 
@@ -57,15 +57,113 @@
         <div class="titre-projet">Veille</div>
     </div>
 
-    <!-- Section Stage -->
+    <div class="info-veille">
+        <div class="dropdown">
+            <div class="titre-veille">
+                <span class="material-symbols-outlined">info</span> 
+                C'est quoi la veille technologique ? 
+                <button class="dropdown-toggle">
+                    <span class="arrow">▼</span>
+                </button>
+            </div>
 
-     <div class="container-stage">
+            <div class="dropdown-content">
+                <div class="desc-veille">La veille technologique est un processus qui consiste à surveiller dans le temps de l'évolutions du domaine technologiques. 
+                    Elle permet de rester à jour sur les nouveautés et changements technologiques sur une base de collecte d'informations. 
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="titre-veille"> 
+                C'est quoi le sujet de veille ? 
+                <button class="dropdown-toggle">
+                    <span class="arrow">▼</span>
+                </button>
+            </div>
+
+            <div class="dropdown-content">
+                <div class="desc-veille"> Sur la base de mes hobbies, j'ai choisi un thème de veille qui m'intérresse : les moteurs dans le domaine de jeu vidéo. 
+                    C'est une technologique en perpetuel évolution depuis sa parution en 
+                    <a href="https://fr.wikipedia.org/wiki/Moteur_de_jeu" target="_blank" style="color:white; font-weight: bold; text-decoration: underline;">1990</a> 
+                    qui a pour but avec des calculs géométriques et physiques de créer des univers imaginaire qui est aujourd'hui les jeux-vidéo. <br> 
+                    J'ai donc suivi au cours de mon année des mises à jours de 3 moteurs assez connus dans l'industrie : Unity, Unreal Engine, Godot Engine.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="titre-veille"> Les outils de ma veille 
+                <button class="dropdown-toggle">
+                    <span class="arrow">▼</span>
+                </button> 
+            </div>
+
+            <div class="dropdown-content">
+                <div class="desc-veille"> 
+                    -> Feedly,
+                    Unity,
+                    Unreal Engine,
+                    Godot Engine, 
+                    Google & Réseaux Sociaux  
+                </div>
+            </div>
+        </div>
+
+        <a href="#"> 
+            <button type="button" class="btn-secondary"> Veille juridique </button>
+        </a>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.dropdown').forEach(drop => {
+            const btn = drop.querySelector('.dropdown-toggle');
+            const content = drop.querySelector('.dropdown-content');
+
+            btn.addEventListener('click', () => {
+                const Open = content.classList.toggle('open');
+                btn.textContent = Open ? "▲" : "▼";
+            });
+        });
+    
+    </script>
+
+    <!-- Section Veille -->
+
+    <div class="container-stage">
         <!-- <div class="vertical-bar"></div> -->
-        <div class="vertical-bar"></div> 
         <div class="text-section">
-            <h1> Article n°5 - Mise à jour Unity 6.2 </h1>
+            <h1> Godot 4.6 </h1>
+            <h3> 11/03/2026 </h3>
+            <p> 
+                Une mise à jour majeure de janvier 2026 renforce la maturité du logiciel Godot. 
+                C'est des nouveautés qui permettent d'améliorer la qualité de vie, une optimisation des performances mais aussi de perfectionnement
+                pour le flux de travail des utilisateurs notamment sur les erreurs de bug, les outils. 
+                Parmis ces grands changements nous retrouvons l'intégration par défaut d'un nouveau système de physique autonome ("Jolt") qui est rapide, 
+                stable et alimente la plupart des grands jeux (AAA) de l'industrie du jeu d'aujourd'hui.
+                Godot montre des évolutions et des améliorations sur le côté 2D et 3D de son moteur renforçant sa place de moteur de jeu.
+            </p>
+            <a href="https://godotengine.org/releases/4.6/" target="_blank">
+                <button type="button" class="btn-secondary">Voir l'article</button>
+            </a>
+
+            <div class="section-btn-stage">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-stage">
+        <div class="text-section">
+            <h1> Mise à jour de Unity 6.3 </h1>
             <h3> 08/12/2025 </h3>
-            <p> Une version stable à long terme pour sa nouvelle version de son moteur est sorti chez Unity ! Elle apporte son lot d'amélioration technologique côté performance et stabilité mais aussi d'accessibillité  </p>
+            <p> Une version stable à long terme pour sa nouvelle version de son moteur est sorti chez Unity ! 
+                Elle apporte son lot d'amélioration technologique côté performance et stabilité mais aussi d'accessibillité.
+                En effet, au delà de la physique basique proposé, Unity importe le support de la réalité étendue (XR) qui englobe la réalité virtuelle et augmentée
+                qui permet d'avoir une vision du monde encore plus réaliste à travers d'experience numérique notamment avec les expressions du visage et les objets du monde réel.
+                Cette mise à jour apporte aussi une amélioration optimisé, evolutif, et cohérent de la physique de la 2D.
+
+            </p>
             <a href="https://unity.com/fr/blog/unity-6-3-lts-is-now-available" target="_blank">
                 <button type="button" class="btn-secondary">Voir l'article</button>
             </a>
@@ -76,11 +174,13 @@
     </div>
 
     <div class="container-stage">
-        <div class="vertical-bar"></div>
         <div class="text-section">
-            <h1> Article n°4 - Mise à jour majeur Unreal Engine 5.7 </h1>
+            <h1> Mise à jour majeur de Unreal Engine 5.7 </h1>
             <h3> 08/12/2025 </h3>
-            <p> Le moteur graphique de création de jeu vidéo Unreal Engine propose une nouvelle mise à jour centré sur la création de monde réaliste avec des détails et rendus impressionnants : reproduction de manière procédurale d'une végétation dense. Adapation de technologie pour d'autre OS, amélioration du rendu de lumière réaliste.</p>
+            <p> Le moteur graphique de création de jeu vidéo Unreal Engine propose une nouvelle mise à jour centré sur la création de monde réaliste avec des détails et rendus impressionnants : 
+                reproduction de manière procédurale d'une végétation dense. 
+                Adapation de technologie pour d'autre système d'exploitation, amélioration du rendu de lumière réaliste.
+            </p>
             <a href="https://www.unrealengine.com/fr/news/unreal-engine-5-7-is-now-available" target="_blank">
                 <button type="button" class="btn-secondary">Voir l'article</button>
             </a>
@@ -91,11 +191,16 @@
     </div>
 
     <div class="container-stage">
-        <div class="vertical-bar"></div> 
         <div class="text-section">
-            <h1> Article n°3 - Mise à jour Unity 6.2 </h1>
+            <h1> Mise à jour de Unity 6.2 </h1>
             <h3> 21/09/2025 </h3>
-            <p> Info à venir sur l'article </p>
+            <p> 
+                L'Intelligence Artificielle n'a pas échappée aux moteurs de jeux tel que Unity!
+                Dans la version 6.2, Unity dévoile Unity AI qui serait un assitant qui simplifie diverses tâches demandant beaucoup d'energie au créateur.
+                Notamment les erreurs de bugs dans la console où desormais l'assistant peut aider à expliquer les scripts ou messages d'erreurs directement dans l'éditeur.
+                L'assistant permettrait aussi de générer des éléments et paramétrer la scène du jeu. 
+                Le but est de faire gagner du temps dans les tâches et avancer rapidement dans le développement.
+            </p>
             <a href="https://unity.com/fr/blog/unity-6-2-is-now-available" target="_blank">
                 <button type="button" class="btn-secondary">Voir l'article</button>
             </a>
@@ -104,32 +209,19 @@
             </div>
         </div>
     </div>
+    
 
     <div class="container-stage">
-        <div class="vertical-bar"></div> 
         <div class="text-section">
-            <h1> Article n°2 - Release Candidate Godot 4.5 RC 2 </h1>
+            <h1> Godot 4.5 </h1>
             <h3> 21/09/2025 </h3>
-            <p> Info à venir sur l'article </p>
+            <p> 
+                Godot, moteur de jeu open-source alimenté et modifiable par la communauté des développeurs offre une version stable 4.5 à ses utilisateurs.
+                Une version qui apporte des évolutions sur le plan physique de la 2d avec la possibilité de fusionner des éléments entre eux dans la sélection.
+                Une évolution de rendu d'interface de langage de programmation et d'amélioration sur multi-support comme Linux, Windows et MacOS (compatibilité avec Vision Pro).
+            </p>
 
-            <a href="https://godotengine.org/article/release-candidate-godot-4-5-rc-2/" target="_blank">
-                <button type="button" class="btn-secondary">Voir l'article</button>
-            </a>
-
-            <div class="section-btn-stage">
-            </div>
-        </div>
-    </div>
-
-
-     <div class="container-stage">
-        <div class="vertical-bar"></div>
-        <div class="text-section">
-            <h1> Article n°1 - Release Candidate Godot 4.5 RC 1</h1>
-            <h3> 21/09/2025 </h3>
-            <p> Info à venir sur l'article </p>
-
-            <a href="https://godotengine.org/article/release-candidate-godot-4-5-rc-1/" target="_blank">
+            <a href="https://godotengine.org/releases/4.5/" target="_blank">
                 <button type="button" class="btn-secondary">Voir l'article</button>
             </a>
 

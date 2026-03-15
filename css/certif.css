@@ -29,6 +29,12 @@
     position: relative;
 }
 
+
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
 .container-certif {
     display: flex;
     justify-content: space-between; /* Espace équilibré entre les sections */

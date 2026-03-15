@@ -64,6 +64,7 @@
     width: 85%;
     margin: 50px auto;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 .container-projet-description {
@@ -75,6 +76,7 @@
     width: 85%;
     margin: 100px auto;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 .image-section-description {
@@ -93,5 +95,5 @@
 }
 
 p {
-    color: #828282;
+    color: #383838;
 }

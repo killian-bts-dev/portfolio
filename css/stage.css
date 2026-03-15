@@ -38,7 +38,6 @@
 .container-stage {
     display: flex;
     justify-content: space-between; /* Espace équilibré entre les sections */
-    align-items: center; /* Aligne les éléments verticalement */
     gap: 80px; /* Espacement entre les sections */
     padding: 30px;
     width: 50%;
