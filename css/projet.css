@@ -40,7 +40,6 @@
     justify-content: space-between; /* Espace équilibré entre les sections */
     align-items: center; /* Aligne les éléments verticalement */
     gap: 20px; /* Espacement entre les sections */
-    padding: 30px;
     width: 50%;
     margin: 100px auto;
     border-bottom: none;
@@ -64,7 +63,7 @@
     width: 85%;
     margin: 50px auto;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 .container-projet-description {
@@ -76,7 +75,7 @@
     width: 85%;
     margin: 100px auto;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 .image-section-description {
