@@ -1,7 +1,7 @@
 .banner-project {
     width: 100%;
     height: 300px; /* La hauteur de la bannière */
-    background-image: url('../src/poire.png'); /* l'image */
+    background-image: url('../src/PORTFOLIO_KILLIAN_BG.png'); /* l'image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .titre-projet {
