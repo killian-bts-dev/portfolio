@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Killian - Portfolio</title>
+    <title>Killian - M2L</title>
     <link rel="icon" href="../../src/Test K Logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/projet.css">
@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
 </head>
 <body>
@@ -52,88 +53,205 @@
 
     <div class="banner-project">
         <div class="filtre"></div>
-        <div class="titre-projet"> MicroProject </div> 
+        <div class="titre-projet"> Maison Des Ligues (M2L) </div> 
     </div>
 
     <div class="container-projet-entete">
         <div class="text-section">
-            <h1>Présentation & Contexte</h1>
-            <p> MicroProject est une petite ESN (Entreprise de Service du Numérique) fondée en 2024 par des anciens élèves du Lycée Nelson Mandela. <br></br>
-                L'entreprise d'ESN souhaitait une interface web dynamique afin d'entrer des informations d'adresse IP, protocole et le nombre de paquets dans un tableau de trafic.<br>
-                L'entreprise souhaitait aussi avoir un site dynamique.
+            <h1 id="S1" >Présentation & Contexte</h1>
+            <p> La M2L est représentée par monsieur Sapin, son président actuel. Conscient de la visibilité qu'apportent les nouveaux 
+                systèmes d'information, il a souhaité bénéficier d'un site internet qui mettra en avant la M2L. <br></br> Monsieur Sapin cherche 
+                continuellement à améliorer et diversifier les services proposés par la maison des ligues afin d'accentuer sa dimension sociale. 
+                Il a donc souhaité bénéficier d'un outil de recherche de partenaires sportifs pour aider ses membres dans leur pratique 
+                quotidienne.
             </p>
             <br>
+
             <h1>Solutions </h1>
             <p>
-                Pour la création de ce projet, la solution la plus adaptée était de développer les deux projets, l'interface ainsi que le site en HTML, CSS et PHP. <br>
-                Le temps a été une contrainte pour la création du projet. Le design des sites sera simplifié.
+                Pour la création de ce projet, la solution était de développer leur site interne en PHP avec le Framework Cake PHP avec un serveur de Base de Données en PostgreSQL <br>
             </p>
+            <br>
+
+            <h1>Organisation</h1>
+            <p>
+                Pour l'organisation de ce projet en équipe, nous avons utilisé un tableau Trello de Atlassian pour se repérer dans les diverses tâches à réaliser
+                et un Google Drive pour transmettre en équipe les fichiers. <br>
+                <div class="image-section-description" id="imgSection" style="background-image: url('../../src/M2L/M2L-1.png'); height: 400px;"></div>
+                
+            </p>
+
         </div>
-        <!-- <div class="image-section">
-            <img src="../../src/poire.png" alt="Image">
-        </div> --> 
     </div>
 
     
 
     <div class="container-projet-description">
             <div class="text-section">
-                <h1> Création de la page tableau trafic </h1>
-                <p> L'objectif de cette page est d'afficher et de visualiser toutes les adresses, protocoles et nombre de paquets venant d'un fichier .txt donné dans un tableau avec la possibilité de revenir vers une page d'accueil, 
-                    réer une nouvelle entrée, filtrer la vue de ce tableau par adresses ou par protocole. 
-
+                <h1 id="S2"> Diagramme UML du Projet </h1>
+                <p> 
+                    Le diagramme compose les 7 pages demandées pour le Projet : 
+                </p>
+                    <ul>
+                        <li> Catégorie </li>
+                        <li> Championnat </li>
+                        <li> Division </li>
+                        <li> Type Championnat </li>
+                        <li> Club </li>
+                        <li> Equipe </li>
+                        <li> Match </li>
+                    </ul>
+                
+                <p>
                     <br></br>
 
-                    Pour cela, il a fallu créer une partie HTML pour l'affichage des différents boutons et du style du tableau. 
+                    Un temps de réflexion a été nécéssaire tout au long du projet pour l'achever complétement.
+                    Notamment les relations entre entités Equipe & Match. <br>
+                    La cardinalité n'est pas comme les autres, mais d'autant plus logique : dans un seul match, il ne peut y avoir que 2 équipes au minimum mais aussi au maximum.
                 </p>
+                
             </div> 
 
-            <br></br>
+            <br>
 
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-1.png'); height: 400px;"></div>
-
-            <div class="text-section">
-                <p> Une partie en PHP pour afficher les données du fichier texte dynamiquement.</p>
-            </div> 
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-2.png'); height: 400px;"></div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-3.png'); height: 400px;"></div>
+            <div class="image-section-description" id="imgSection" style="background-image: url('../../src/M2L/M2L-2.png'); height: 400px;"></div>
+            
 
             <br></br>
 
             <div class="text-section">
-                <h1> Filtrer la vue du tableau par IP ou par Protocole </h1>
-                <p> L'utilisateur souhaite pouvoir voir le nombre de paquets par IP ou par Protocole. </p>
-            </div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-4.png'); height: 400px;"></div>
+                <h1 id="S3"> Installation de l'Environnement (PostgreSQL & Cake PHP) </h1>
+                <p> Avant de démarrer quoi que ce soit, il faut installer l'environnement ainsi que le framework. </p>
+            </div> 
+            <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-3.png'); height: 400px;"></div>
+
+            <p> Utilisation de pgAdmin4 pour visualiser la base de données en mode graphique comme phpMyAdmin. <br>
+                Admirer est aussi un outil de visualisation si c'est sur Wamp64. <br>
+                Sinon, l'utilisation en ligne de commande pour visualiser avec Postgre est possible !
+            </p>
+            <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-4.png'); height: 400px;"></div>
+            
+            <p> Installation du projet avec Composer (préalablement installé) pour Cake PHP </p>
+            <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-5.png'); height: 200px;"></div>
+
+
+            <br></br>
 
             <div class="text-section">
-                <p> La base de la partie HTML reste le même, uniquement le PHP change :  </p>
+                <h1 id="S4"> Création de la base de données </h1>
+                <p> 
+                    Une fois l'installation de toute l'environnement (Cake, Postgre), il faut pouvoir faire la base de données ainsi que la configuration nécéssaire
+                    pour connecter notre base de données dans CakePHP.
+                </p>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-6.png'); height: 100px;"></div>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-7.png'); height: 400px;"></div>
             </div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-5.png'); height: 400px;"></div>
 
             <div class="text-section">
-                <p> Filtre par Protocole : </p>
+                <h1> Détail du projet et rendu final </h1>
+                <p> 
+                    L'accueil principale du site avec un lien de redirection sur les 7 sections de la M2L.
+                </p>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-8.png'); height: 400px;"></div>
+
+                <p> 
+                    La page division et catégorie.
+                </p>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-9.png'); height: 400px;"></div>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-10.png'); height: 400px;"></div>
+
+                <p> 
+                    Page d'édition d'une catégorie : on peut modifier son nom et le montant d'indémnité
+                </p>
+
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-11.png'); height: 400px;"></div>
+
+                <p> 
+                    Page Type Championnat 
+                </p>
+
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-12.png'); height: 400px;"></div>
+
+                <p> 
+                    Page Championnat : la section regroupe les informations de catégorie, de division et de type de championnat
+                </p>
+
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-13.png'); height: 400px;"></div>
+
+                <p> 
+                    Lorsqu'un championnat est modifiable, les informations liés à ce championnat peuvent être modifiées.
+                </p>
+
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-14.png'); height: 400px;"></div>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-15.png'); height: 400px;"></div>
+
+                <p> 
+                    Page Club 
+                </p>
+
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-16.png'); height: 400px;"></div>
+
+                <p> 
+                    Page Equipe : le nom de l'équipe associé avec un club.
+                </p>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-17.png'); height: 400px;"></div>
+
+                <p> 
+                    Page Match : cette page permet de gérer les matches entre deux équipes distinctes, la date et l'heure ainsi que le lieu.
+                </p>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-18.png'); height: 400px;"></div>
+                <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-19.png'); height: 400px;"></div>
+
             </div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-6.png'); height: 400px;"></div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-7.png'); height: 400px;"></div>
 
             <div class="text-section">
-                <h1> Formulaire pour ajouter une entrée  </h1>
-                <p> L'objectif de ce formulaire est de pouvoir ajouter dans le fichier texte une nouvelle entrée sans passer par une modification manuelle de ce dernier. </p>
-            </div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-8.png'); height: 400px;"></div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-9.png'); height: 400px;"></div>
+                <h1 id="S5"> Documentations & Détails </h1>
+                <p> 
+                    Pour toutes les informations détaillés sur le projet : <br></br>
+                    
+                    <a href="../documentation.html#M2L-Installation-Env"> 
+                        <button type="button" class="btn-secondary"> Documentation complète de l'installation de l'environnement </button>
+                    </a>
+                    
+                    <br></br>
 
-            <div class="text-section">
-                <h1> Site internet</h1>
-                <p> Le site internet est très simplifié par une contrainte du temps imposé. </p>
+                    <a href="../documentation.html#M2L-DocTech"> 
+                        <button type="button" class="btn-secondary"> Documentation Technique </button>
+                    </a>
+
+                    <a href="../documentation.html#M2L-DocUser"> 
+                        <button type="button" class="btn-secondary"> Documentation Utilisateur </button>
+                    </a>
+
+                </p>
             </div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-Site1.png'); height: 400px;"></div>
-            <div class="image-section-description" style="background-image: url('../../src/MicroProject-Site2.png'); height: 400px;"></div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="overlay" role="dialog" aria-hidden="true" aria-label="Image agrandie">
+                <img id="lightboxImg" alt="" tabindex="0">
+            </div>
+
+        
+            
     </div>
+
+    
 
     <footer>
         <div class="footer-content">
-            <div class="texte">Non terminée | ©2025 Killian - Tous droits réservés</div>
+            <div class="texte">
+                <a href="#S1">Présentation</a> |
+                <a href="#S2">Diagramme</a> |
+                <a href="#S3">Installation Environnement</a> |
+                <a href="#S4">Base de données</a> |
+                <a href="#S5">Documentations</a> 
+                | ©2025 Killian - Tous droits réservés
+            </div>
         </div>
     </footer>
+
+    <script src="../../js/lightbox.js"></script>
+
+
+</body>
+</html>
