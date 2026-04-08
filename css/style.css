@@ -195,7 +195,7 @@ h1 {
 
 .image-section img {
     width: 100%; /* L’image s’adapte à la section */
-    max-width: 400px; /* Taille max de l’image */
+    max-width: 300px; /* Taille max de l’image */
     border-radius: 10px; /* Arrondi les coins */
 }
 
