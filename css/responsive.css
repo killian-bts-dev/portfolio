@@ -129,9 +129,20 @@
     width: auto;
 }
 
+.certifications {
+    display: flex;
+    flex-direction: column ;
+}
+
+.certifications .container-certif {
+   width: 60%;
+   margin: 80px auto;
+}
+
+
 .copyright-mobile {
-  font-size: 10px;
-  }
+  display: block;
+}
 
 }
 
