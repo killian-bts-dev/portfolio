@@ -141,7 +141,9 @@
 
 
 .copyright-mobile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 }
@@ -158,6 +160,10 @@
 
   .description {
     font-size: 18px;
+  }
+
+  footer {
+    display: none;
   }
 
     .btn-primary {
@@ -198,7 +204,10 @@
   }
 
   .copyright-mobile {
-  font-size: 10px;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1025px) {

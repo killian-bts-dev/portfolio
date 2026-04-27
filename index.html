@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Killian - Portfolio</title>
-    <link rel="icon" href="src/Test K Logo2.png" type="image/x-icon">
+    <link rel="icon" href="src/LOGO/Test K Logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
     <nav class="navbar">
         <nav class="sidebar">
         <div class ="navbar-content">
-            <div class="title"><img src="src/Test K Logo2.png" height="48px";></div>
+            <div class="title"><img src="src/LOGO/Test K Logo2.png" height="48px";></div>
             <div class="nav-button">
                 <a class="nav-active" href="#">Accueil</a>
                 <!-- <a class="nav-link" href="pages/profil.html">Profil</a> -->
@@ -40,7 +40,11 @@
                 <a class="nav-link" href="pages/certifications.html">Certifications</a>
                 <a class="nav-link" href="pages/documentations.html">Documentations</a>
                 <a class="nav-link" href="pages/veille.html">Veille</a>
-                <div class="copyright-mobile">© 2025 Killian - Tous droits réservés </div>
+                <div class="copyright-mobile">
+                    © 2025 Killian - Tous droits réservés
+                    <a href="mailto:turpin.killian.pro@gmail.com" target="_blank"> <img src="src/LOGO/Mail.png" alt="Logo Mail" style="height: 24px;"></a>
+                    <a href="https://www.linkedin.com/in/killian-t-12878428a/" target="_blank"> <img src="src/LOGO/LI-In-Bug.png" alt="Logo LinkedIn" style="height: 24px;"></a>
+                </div>
                 
                 <!-- <button id="toggleDarkMode">🌙 Mode Sombre</button> -->
             </div>
@@ -52,50 +56,73 @@
 
     <div class="container"> 
         <div class="container-content">
-        <div class="titre"> Bienvenue sur le Portfolio de Killian
-        </div>
-        <div class="description"> -> Je suis actuellement en BTS SIO - OPTION SLAM pour une formation en Bac +2. 
-            <br> -> Je suis passionné et intéressé par le domaine de l'informatique et précisément dans le développement.
-            <!-- <br></br> <i> -> Les poires font office de placeholder le temps que je trouves/créer des visuels adéquats... 🍐 </i>
-            <br> <i> -> Site en cours de création... </i> --> 
-        </div>
-
-
-        <!-- <div class="container-about"> -->
-            <div class="text-section-profil">
-                <h1>A propos de moi</h1>
-                <p>Je suis étudiant au lycée polyvalent Nelson Mandela dans le cadre de ma formation au <b> BTS Services Informatiques aux Organisations (SIO) </b> avec la spécialité <b> SLAM (Solution Logicielle Application Métiers) </b>. 
-                    <br></br> Je suis un passionné dans ce domaine depuis la seconde où j'ai commencé à m'avancer avec la création d'un site internet. 
-                    <br></br> Aujourd'hui, je continue à suivre ce chemin en apprenant les divers aspects que proposent le domaine de l'informatique notamment la création d'application mobile, la cybersécurité, les systèmes d'exploitations (Linux, Windows). 
-                </p>
-                <a href="src/DOCUMENTS/CV - TURPIN KILLIAN.pdf"  target="_blank">
-                    <button type="button" class="btn-secondary">Mon CV</button>
-                </a>
-                <a href="pages\bts-sio.html">
-                    <button type="button" class="btn-secondary">BTS SIO</button>
-                </a>
-
-                <a href="pages\parcours.html"> 
-                    <button type="button" class="btn-secondary"> Parcours </button>
-                </a>
-
-                <br></br> 
+            <div class="titre"> Bienvenue sur le Portfolio de Killian
             </div>
-        <!-- </div> -->
+            <div class="description"> -> Je suis actuellement en BTS SIO - OPTION SLAM pour une formation en Bac +2. 
+                <br> -> Je suis passionné et intéressé par le domaine de l'informatique et précisément dans le développement.
+            </div>
 
-        <!-- <a href="pages/projets/projet.html">
-            <button type="button" class="btn-primary">Regarder les projets </button>
-        </a> --> 
+
+                <div class="text-section-profil">
+                    <h1>A propos de moi</h1>
+                    <p>Je suis étudiant au lycée polyvalent Nelson Mandela dans le cadre de ma formation au <b> BTS Services Informatiques aux Organisations (SIO) </b> avec la spécialité <b> SLAM (Solution Logicielle Application Métiers) </b>. 
+                        <br></br> Je suis un passionné dans ce domaine depuis la seconde où j'ai commencé à m'avancer avec la création d'un site internet. 
+                        <br></br> Aujourd'hui, je continue à suivre ce chemin en apprenant les divers aspects que proposent le domaine de l'informatique notamment la création d'application mobile, la cybersécurité, les systèmes d'exploitations (Linux, Windows). 
+                    </p>
+                    <a href="src/DOCUMENTS/CV - TURPIN KILLIAN.pdf"  target="_blank">
+                        <button type="button" class="btn-secondary">Mon CV</button>
+                    </a>
+                    <a href="pages\bts-sio.html">
+                        <button type="button" class="btn-secondary">BTS SIO</button>
+                    </a>
+
+                    <a href="pages\parcours.html"> 
+                        <button type="button" class="btn-secondary"> Parcours </button>
+                    </a>
+
+                    <br></br> 
+                </div>
+        </div>
     </div>
+
+    <!-- <div class="thumb-carousel" aria-label="Projets"> 
+        <div class="track">
+            Duplique les items pour assurer la boucle continue 
+            <figure class="item"><img src="src/LOGO/cakephp.png" alt="Projet 1"></figure>
+            <figure class="item"><img src="src/LOGO/M2L_Logo.png" alt="Projet 2"></figure>
+            <figure class="item"><img src="src/LOGO/logo-GLPI-250-black.png" alt="Projet 3"></figure>
+            <figure class="item"><img src="src/LOGO/android-studio-icon.webp" alt="Projet 4"></figure>
+
+            copie des mêmes éléments
+            <figure class="item"><img src="src/LOGO/cakephp.png" alt="Projet 1"></figure>
+            <figure class="item"><img src="src/LOGO/M2L_Logo.png" alt="Projet 2"></figure>
+            <figure class="item"><img src="src/LOGO/logo-GLPI-250-black.png" alt="Projet 3"></figure>
+            <figure class="item"><img src="src/LOGO/android-studio-icon.webp" alt="Projet 4"></figure>
+
+            copie des mêmes éléments 
+            <figure class="item"><img src="src/LOGO/cakephp.png" alt="Projet 1"></figure>
+            <figure class="item"><img src="src/LOGO/M2L_Logo.png" alt="Projet 2"></figure>
+            <figure class="item"><img src="src/LOGO/logo-GLPI-250-black.png" alt="Projet 3"></figure>
+            <figure class="item"><img src="src/LOGO/android-studio-icon.webp" alt="Projet 4"></figure>
+            
+            copie des mêmes éléments 
+            <figure class="item"><img src="src/LOGO/cakephp.png" alt="Projet 1"></figure>
+            <figure class="item"><img src="src/LOGO/M2L_Logo.png" alt="Projet 2"></figure>
+            <figure class="item"><img src="src/LOGO/logo-GLPI-250-black.png" alt="Projet 3"></figure>
+            <figure class="item"><img src="src/LOGO/android-studio-icon.webp" alt="Projet 4"></figure>
+            
+        </div>
+    </div> -->
 
     <footer>
         <div class="footer-content">
             <div class="texte">Vous pouvez me contacter :</div>
             <div class="social-icon">
-                <a href="mailto:turpin.killian.pro@gmail.com"> Mail </a>
-                <a href="https://linkedin.com"> LinkedIn </a>
-                <a href="https://discord.com"> Discord </a>
+                <a href="mailto:turpin.killian.pro@gmail.com" target="_blank"> <img src="src/LOGO/Mail.png" alt="Logo Mail" style="height: 24px;"></a>
+                <a href="https://www.linkedin.com/in/killian-t-12878428a/" target="_blank"> <img src="src/LOGO/LI-In-Bug.png" alt="Logo LinkedIn" style="height: 24px;"></a>
             </div>
         </div>
     </footer>
+</body>
+</html>
 

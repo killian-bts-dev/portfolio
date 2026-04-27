@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Killian - Android</title>
+    <link rel="icon" href="../../src/LOGO/Test K Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/projet.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-button");
+        if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+        }
+        });
+        
+    </script>
+
+    <nav class="navbar">
+        <nav class="sidebar">
+        <div class ="navbar-content">
+            <div class="title"><img src="../../src/LOGO/Test K Logo2.png" height="48px";></div>
+            <div class="nav-button">
+                <a class="nav-link" href="../../index.html">Accueil</a>
+                <a class="nav-link" href="projet.html">Projets</a>
+                <a class="nav-link" href="../stage.html">Stages</a>
+                <a class="nav-link" href="../certifications.html">Certifications</a>
+                <a class="nav-link" href="../documentations.html">Documentations</a>
+                <a class="nav-link" href="../veille.html">Veille</a>
+            </div>
+        </div>
+        <button class="menu-toggle">☰</button>
+    <div class="horizontal-bar"></div>
+        </nav>
+    </nav>
+
+<!-- Content -->
+
+    <div class="banner-project">
+        <div class="filtre"></div>
+        <div class="titre-projet"> Android - Quizz</div> 
+    </div>
+
+    <div class="container-projet-entete">
+        <div class="text-section">
+            <h1 id="S1" >Présentation & Contexte</h1>
+            <p> 
+                Dans le but d'un projet d'android dans le cadre du BTS SIO, j'ai pu experimenter la création d'une application android avec le langage Kotlin. 
+                Le but était de créer une application quizz avec un schéma conceptuel, une base de données et une API (Application Programming Interface).
+            </p>
+            <br>
+
+        </div>
+    </div>
+
+    
+
+    <div class="container-projet-description">
+            <div class="text-section">
+                <h1 id="S2"> Diagramme UML du Projet </h1>
+                <p> 
+                    Le diagramme se compose de 7 classes du projet : 
+                </p>
+                    <ul>
+                        <li>Question</li>
+                        <li>Reponse</li>
+                        <li>Theme</li>
+                        <li>Questionnaire</li>
+                        <li>Niveau</li>
+                        <li>Vrai/Faux</li>
+                        <li>QCM</li>
+                    </ul>
+                
+                <p>
+                    <br></br>
+
+                    Le projet est un système de Quiz qui se compose de questions avec 4 possibilités de réponses avec des niveaux et des thèmes différents. <br>
+                    Le questionnaire se compose de plusieurs questions qui peut être du type QCM ou un Vrai ou Faux, dans ce cas, 2 possibilités de réponses sont possibles.
+
+                </p>
+                
+            </div> 
+
+            <br>
+
+            <div class="image-section-description" id="imgSection" style="background-image: url('../../src/ANDROID/Android-1.png'); height: 400px;"></div>
+            
+
+            <br></br>
+
+            <div class="text-section">
+                <h1 id="S3"> Initialisation avec Android Studio </h1>
+                <p> Avant de démarrer quoi que ce soit, il faut installer l'environnement ainsi que le framework. </p>
+            </div> 
+            <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-3.png'); height: 400px;"></div>
+
+            <p> Utilisation de pgAdmin4 pour visualiser la base de données en mode graphique comme phpMyAdmin. <br>
+                Admirer est aussi un outil de visualisation si c'est sur Wamp64. <br>
+                Sinon, l'utilisation en ligne de commande pour visualiser avec Postgre est possible !
+            </p>
+            <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-4.png'); height: 400px;"></div>
+            
+            <p> Installation du projet avec Composer (préalablement installé) pour Cake PHP </p>
+            <div class="image-section-description" style="background-image: url('../../src/M2L/M2L-5.png'); height: 200px;"></div>
+
+
+            <br></br>
+
+            <div class="text-section">
+                <h1 id="S5"> Documentations & Détails </h1>
+                <p> 
+                    Pour toutes les informations détaillés sur le projet avec Cake PHP & Android Studio : <br></br>
+
+                    <a href="../documentations.html#M2L-DocTech"> 
+                        <button type="button" class="btn-secondary"> Documentation Technique </button>
+                    </a>
+
+                </p>
+            </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="overlay" role="dialog" aria-hidden="true" aria-label="Image agrandie">
+                <img id="lightboxImg" alt="" tabindex="0">
+            </div>
+
+        
+            
+    </div>
+
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="texte">
+                ©2025 Killian - Tous droits réservés
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/lightbox.js"></script>
+
+
+</body>
+</html>
