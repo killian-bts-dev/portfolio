@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirection...</title>
+    <meta http-equiv="refresh" content="0; url=https://killian-it.github.io/portfolio">
+</head>
+<body>
+    <p>Le site a changé d'adresse. Vous allez être redirigé vers le nouveau site...</p>
+    
+    <script>
+        var nouveauDomaine = "https://killian-it.github.io/portfolio";
+        
+        var nouvelleUrl = nouveauDomaine + window.location.pathname + window.location.search;
+        window.location.replace(nouvelleUrl);
+    </script>
+</body>
+</html>
